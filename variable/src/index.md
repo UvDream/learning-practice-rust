@@ -10,7 +10,7 @@ fn main() {
 }
 ```
 > 以上就是错误的,`x`值默认是不可变的,所以再次赋值就是错误的
-![error](https://pic.baixiongz.com/uploads/2021/08/29/ae808b16e322a.png)
+![error](https://pic.baixiongz.com/uploads/2021/08/29/3cacbf67220cc.png)
 
 ### 解决上述问题
 - `mut`
