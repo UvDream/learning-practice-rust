@@ -2,7 +2,7 @@
  * @Author: wangzhongjie
  * @Date: 2021-09-13 22:11:54
  * @LastEditors: wangzhongjie
- * @LastEditTime: 2021-09-13 22:17:36
+ * @LastEditTime: 2021-09-13 22:20:09
  * @Description:悬垂引用（Dangling References）
  * @Email: UvDream@163.com
  */
@@ -12,6 +12,7 @@ pub fn dangling_pointer() {
     println!("{}", reference_to_nothing);
     println!("悬垂引用");
 }
+// 引用必须总是有效的
 fn dangle() -> String {
     let s = String::from("Dangling References");
     // &s
