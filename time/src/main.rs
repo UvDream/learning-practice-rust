@@ -1,10 +1,15 @@
 use chrono::prelude::*;
+// mod math {
+//     include!("math.rs");
+// }
+mod format_time;
+mod math;
+
 fn main() {
     let utc: DateTime<Utc> = Utc::now();
     let local: DateTime<Local> = Local::now();
+    math::add(1, 2);
     println!("{}", utc);
     println!("{}", local);
-    // 格式化
-    let dt = utc.format("%Y-%m-%d %H:%M:%S");
-    println!("{}", dt);
+    format_time::format_function();
 }
