@@ -70,7 +70,8 @@ fn for_function_simple() {
 }
 // for 循环遍历集合中元素 rev()来反转
 fn for_map() {
-    for elem in (1..4).rev() {
+    for elem in 1..4 {
+        // for elem in (1..4).rev() {
         println!("{}", elem)
     }
 }
