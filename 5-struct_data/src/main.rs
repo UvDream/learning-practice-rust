@@ -1,4 +1,5 @@
-// 打印结构体
+mod tuple_struct;
+/// 打印结构体
 #[derive(Debug)]
 struct User {
     name: String,
@@ -32,7 +33,8 @@ fn main() {
         ..user1
     };
     println!("更新结构体");
-    println!("{:#?}--{:#?}", user2, user3)
+    println!("{:#?}--{:#?}", user2, user3);
+    tuple_struct::tuple();
 }
 // 1.复用值
 fn build_user(email: String, name: String) -> User {
