@@ -19,7 +19,7 @@ fn first_word(s: &String) -> usize {
     }
     s.len()
 }
-// slice
+/// slice
 fn string_slice(s: &String) {
     let hello = &s[0..5];
     println!("{}", hello);
@@ -33,7 +33,7 @@ fn string_slice(s: &String) {
     let s3 = &s[..];
     println!("{}", s2 == s3)
 }
-// 改良款slice
+/// 改良款slice
 fn first_word_slice(s: &String) -> &str {
     let bytes = s.as_bytes();
     for (i, &item) in bytes.iter().enumerate() {
