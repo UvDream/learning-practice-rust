@@ -1,7 +1,7 @@
 use std::process::Command;
 fn main() {
     let output = Command::new("cmd")
-        .args(["/C", "yarns -v"])
+        .args(["/C", "yarn -v"])
         .output()
         .expect("failed to execute process");
 
